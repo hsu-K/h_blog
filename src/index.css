@@ -1,0 +1,26 @@
+.radix-themes {
+	--default-font-family: "LXGW WenKai TC", serif
+
+}
+/* 斜體、粗體 */
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
+
+/* 表格樣式 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #fae9e9;
+}
