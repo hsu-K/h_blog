@@ -4,7 +4,7 @@ const HomePage = () => {
     <>
       <Container>
         <Flex direction={{ initial: 'column', sm: 'row' }}>
-          <Box minWidth="30%" as="div" style={{ borderRight: 'solid 2px white' }}>
+          <Box width="40%" as="div" style={{ borderRight: 'solid 0px white' }}>
             <Flex direction="column" gap="4" align="center" mt="5" >
               <Avatar
                 size="9"
@@ -12,16 +12,13 @@ const HomePage = () => {
                 src="./Avator.png"
                 fallback="A"
               />
-              <Box>
+              <Box >
                 <Flex direction="column" gapY="4" align="center">
                   <Heading>你好！這裡是hsu_K</Heading>
                   <Flex gap="2">
                     <Badge color="orange" size="3">CTF菜雞</Badge>
                     <Badge color="gold" size="3" variant="solid">魔物"獵"人</Badge>
                   </Flex>
-                  {/* <Box>
-                  <Text size="5" ml="6">拖了一輩子的Blog</Text>
-                </Box> */}
                   <DataList.Root size="3" mt="5">
                     <DataList.Item align="center">
                       <DataList.Label minWidth="50px" >目前狀態：</DataList.Label>
@@ -32,24 +29,25 @@ const HomePage = () => {
                       </DataList.Value>
                     </DataList.Item>
                     <DataList.Item>
-                      <DataList.Label minWidth="50px">Email:</DataList.Label>
-                      <DataList.Value>
-                        <Text>t0937993806@gmail.com</Text>
-                      </DataList.Value>
-                    </DataList.Item>
-                    <DataList.Item>
-                      <DataList.Label minWidth="50px">Email:</DataList.Label>
-                      <DataList.Value>
-                        <Text>t0937993806@gmail.com</Text>
-                      </DataList.Value>
-                    </DataList.Item>
-                    <DataList.Item>
-                      <DataList.Label minWidth="50px">Email:</DataList.Label>
+                      <DataList.Label minWidth="50px">Email：</DataList.Label>
                       <DataList.Value>
                         <Text>t0937993806@gmail.com</Text>
                       </DataList.Value>
                     </DataList.Item>
                   </DataList.Root>
+
+                  <Flex gap="5" align="center">
+                    <a href="https://github.com/hsu-K" target="_blank">
+                      <img src="./github.svg" width="28px"></img>
+                    </a>
+
+                    <a href="https://discordapp.com/users/612578388179157002" target="_blank">
+                      <img src="./discord.svg" width="25px"></img>
+                    </a>
+                    <a href="https://x.com/697Inventor" target="_blank">
+                      <img src="./twitter.svg" width="25px"></img>
+                    </a>
+                  </Flex>
                 </Flex>
               </Box>
             </Flex>
