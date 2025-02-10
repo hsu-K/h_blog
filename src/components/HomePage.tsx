@@ -1,4 +1,3 @@
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { Box, Flex, Avatar, Text, Heading, Badge, DataList, AspectRatio, Container } from "@radix-ui/themes";
 const HomePage = () => {
   return (

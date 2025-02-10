@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import "@radix-ui/themes/styles.css"
 import './index.css'
-import { Theme, ThemePanel } from '@radix-ui/themes'
+import { Theme } from '@radix-ui/themes'
 import App from './App.tsx'
 import {BrowserRouter as Router} from 'react-router-dom';
 

@@ -1,7 +1,6 @@
 import { Box, Tabs } from "@radix-ui/themes";
 import { Link } from "react-router-dom";
 import { Flex, Text, Container } from "@radix-ui/themes";
-import { useEffect } from "react";
 
 const Header = () => { 
 
