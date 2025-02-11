@@ -1,26 +1,38 @@
-import ReactMarkdowm from 'react-markdown'
+import ReactMarkdown from 'react-markdown'
 import { useEffect, useState } from "react";
 import remarkGfm from "remark-gfm";
-//import markdownContent from "./posts/test.md?raw";
+import { useParams } from "react-router-dom";
+import { Box, Container } from "@radix-ui/themes";
 
 const MarkdowmComponent = () => {
-
-  const[trymd, setMdContent] = useState("");
+  const[content, setContent] = useState("");
+  const {slug} = useParams();
 
   useEffect(() => {
-    fetch("/posts/test.md")
+    fetch(`/posts/${slug}.md`)
       .then((res) => res.text())
       .then((text) => {
-        setMdContent(text);
+        setContent(text);
         console.log(text);
     })
-  }, []);
+    .catch((error) => {
+      console.error("Error loading markdown:", error);
+      setContent("# 文章載入失敗");
+    });
+  }, [slug]);
 
 
   return (
-    <> 
-      <ReactMarkdowm remarkPlugins={[remarkGfm]}>{trymd}</ReactMarkdowm>
-    </>
+    <Container size="3">
+      <Box p="4" style={{ 
+        backgroundColor: 'var(--gray-a2)', 
+        borderRadius: 'var(--radius-3)'
+      }}>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          {content}
+        </ReactMarkdown>
+      </Box>
+    </Container>
   )
 }
 
