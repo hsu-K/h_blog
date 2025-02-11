@@ -1,0 +1,41 @@
+# 依賴包目錄
+node_modules/
+.npm
+package-lock.json
+yarn.lock
+
+# 建構輸出
+dist/
+build/
+out/
+.next/
+
+# 環境文件
+.env
+.env.local
+.env.*.local
+
+# IDE 和編輯器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# 日誌文件
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 測試覆蓋率報告
+coverage/
+
+# 暫存文件
+.tmp/
+.temp/
+
+# 系統文件
+.DS_Store
+Thumbs.db 

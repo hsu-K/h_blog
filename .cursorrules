@@ -1,0 +1,43 @@
+{
+  "typescript": {
+    "formatter": "prettier",
+    "formatOnSave": true,
+    "organizeImportsOnSave": true,
+    "compilerOptions": {
+      "strict": true,
+      "target": "ES6",
+      "module": "ESNext",
+      "jsx": "react-jsx",
+      "esModuleInterop": true
+    }
+  },
+  "javascript": {
+    "formatter": "prettier",
+    "formatOnSave": true,
+    "organizeImportsOnSave": true
+  },
+  "react": {
+    "defaultExport": true,
+    "strictProps": true,
+    "hooks": {
+      "exhaustiveDeps": true
+    }
+  },
+  "editor": {
+    "tabSize": 2,
+    "insertSpaces": true,
+    "rulers": [80, 100],
+    "wordWrap": "off",
+    "trimTrailingWhitespace": true,
+    "insertFinalNewline": true
+  },
+  "search": {
+    "exclude": [
+      "node_modules",
+      "build",
+      "dist",
+      ".next",
+      "coverage"
+    ]
+  }
+} 
